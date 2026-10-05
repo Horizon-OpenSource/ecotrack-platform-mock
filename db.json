@@ -370,5 +370,56 @@
       "resultValue": 12050,
       "calculatedAt": "2026-02-02T09:00:00.000Z"
     }
+  ],
+  "environmental-goals": [
+    {
+      "id": "goal-001",
+      "organizationId": 1,
+      "name": "Reduce Scope 2 emissions by 15 %",
+      "targetReductionPercent": 15,
+      "progressPercent": 40,
+      "targetDate": "2026-12-31",
+      "status": "active"
+    },
+    {
+      "id": "goal-002",
+      "organizationId": 1,
+      "name": "Cut delivery fleet fuel use by 10 %",
+      "targetReductionPercent": 10,
+      "progressPercent": 72,
+      "targetDate": "2026-09-30",
+      "status": "atRisk"
+    },
+    {
+      "id": "goal-003",
+      "organizationId": 1,
+      "name": "Source 30 % renewable electricity",
+      "targetReductionPercent": 30,
+      "progressPercent": 100,
+      "targetDate": "2026-06-30",
+      "status": "achieved"
+    }
+  ],
+  "environmental-reports": [
+    {
+      "id": "rep-001",
+      "organizationId": 1,
+      "title": "ecotrack-2026-01-period-report",
+      "type": "period",
+      "periodId": "2026-01",
+      "generatedAt": "2026-02-02T10:00:00.000Z",
+      "status": "available",
+      "totalTonnesCo2e": 14.55
+    },
+    {
+      "id": "rep-002",
+      "organizationId": 1,
+      "title": "ecotrack-all-periods-consolidated-report",
+      "type": "consolidated",
+      "periodId": "ALL",
+      "generatedAt": "2026-02-03T10:00:00.000Z",
+      "status": "unavailable",
+      "totalTonnesCo2e": 14.55
+    }
   ]
 }
