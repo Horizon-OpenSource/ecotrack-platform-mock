@@ -1,0 +1,122 @@
+{
+  "organizations": [
+    {
+      "id": 1,
+      "name": "Andina Export S.A.C.",
+      "industry": "Manufacturing & Energy",
+      "addressLine1": "Av. Javier Prado Este 1200",
+      "addressLine2": "Of. 402",
+      "city": "Lima",
+      "stateProvince": "Lima",
+      "postalCode": "15036",
+      "country": "Peru",
+      "contactEmail": "admin@andinaexport.pe",
+      "phone": "+51 1 555 0142",
+      "activeUsers": 12
+    }
+  ],
+  "sites": [
+    {
+      "id": 1,
+      "organizationId": 1,
+      "name": "HQ San Isidro",
+      "location": "San Isidro, Lima",
+      "active": true,
+      "assignedUsers": 8
+    },
+    {
+      "id": 2,
+      "organizationId": 1,
+      "name": "Arequipa Plant",
+      "location": "Arequipa",
+      "active": true,
+      "assignedUsers": 3
+    },
+    {
+      "id": 3,
+      "organizationId": 1,
+      "name": "Callao Warehouse",
+      "location": "Callao",
+      "active": true,
+      "assignedUsers": 2
+    },
+    {
+      "id": 4,
+      "organizationId": 1,
+      "name": "Trujillo Office",
+      "location": "Trujillo",
+      "active": false,
+      "assignedUsers": 0
+    },
+    {
+      "id": 5,
+      "organizationId": 1,
+      "name": "Boston R&D Lab",
+      "location": "Boston, MA",
+      "active": true,
+      "assignedUsers": 1
+    }
+  ],
+  "business-units": [
+    {
+      "id": 1,
+      "organizationId": 1,
+      "siteId": 1,
+      "name": "Operations",
+      "code": "OPS-01",
+      "responsible": "Claudia Ramírez",
+      "description": "Operational management for the main headquarters.",
+      "active": true,
+      "emissionSourceCount": 6
+    },
+    {
+      "id": 2,
+      "organizationId": 1,
+      "siteId": 3,
+      "name": "Logistics",
+      "code": "LOG-01",
+      "responsible": "Carlos Mendoza",
+      "description": "Fleet and warehouse operations for export shipments.",
+      "active": true,
+      "emissionSourceCount": 4
+    },
+    {
+      "id": 3,
+      "organizationId": 1,
+      "siteId": 2,
+      "name": "Production",
+      "code": "PROD-01",
+      "responsible": "Diego Paredes",
+      "description": "Production activities performed at the Arequipa plant.",
+      "active": true,
+      "emissionSourceCount": 9
+    },
+    {
+      "id": 4,
+      "organizationId": 1,
+      "siteId": 1,
+      "name": "Administration",
+      "code": "ADM-01",
+      "responsible": "Claudia Ramírez",
+      "description": "Administrative and corporate support activities.",
+      "active": false,
+      "emissionSourceCount": 2
+    }
+  ],
+  "organization-activities": [
+    {
+      "id": 1,
+      "organizationId": 1,
+      "type": "organization_updated",
+      "description": "Updated organization address",
+      "occurredAt": "2026-10-03T14:30:00Z"
+    },
+    {
+      "id": 2,
+      "organizationId": 1,
+      "type": "site_created",
+      "description": "Added new site: Boston R&D Lab",
+      "occurredAt": "2026-09-28T19:15:00Z"
+    }
+  ]
+}
