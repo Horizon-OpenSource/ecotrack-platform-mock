@@ -119,7 +119,6 @@
       "occurredAt": "2026-09-28T19:15:00Z"
     }
   ],
-
   "emission-sources": [
     {
       "id": "src-001",
@@ -242,6 +241,134 @@
       "unit": "ton-km",
       "origin": "CSV",
       "recordedAt": "2026-03-10T14:30:00.000Z"
+    }
+  ],
+  "emission-factors": [
+    {
+      "id": "factor-diesel",
+      "name": "Diesel combustion",
+      "scope": "SCOPE_1",
+      "unit": "L",
+      "value": 2.68,
+      "source": "Illustrative demo value"
+    },
+    {
+      "id": "factor-gasoline",
+      "name": "Gasoline combustion",
+      "scope": "SCOPE_1",
+      "unit": "L",
+      "value": 2.31,
+      "source": "Illustrative demo value"
+    },
+    {
+      "id": "factor-natural-gas",
+      "name": "Natural gas combustion",
+      "scope": "SCOPE_1",
+      "unit": "m³",
+      "value": 2,
+      "source": "Illustrative demo value"
+    },
+    {
+      "id": "factor-grid",
+      "name": "Grid electricity",
+      "scope": "SCOPE_2",
+      "unit": "kWh",
+      "value": 0.25,
+      "source": "Illustrative demo value"
+    },
+    {
+      "id": "factor-renewable",
+      "name": "Renewable electricity contract",
+      "scope": "SCOPE_2",
+      "unit": "kWh",
+      "value": 0.02,
+      "source": "Illustrative demo value"
+    },
+    {
+      "id": "factor-air-travel",
+      "name": "Air travel",
+      "scope": "SCOPE_3",
+      "unit": "km",
+      "value": 0.15,
+      "source": "Illustrative demo value"
+    },
+    {
+      "id": "factor-freight",
+      "name": "Freight transportation",
+      "scope": "SCOPE_3",
+      "unit": "ton-km",
+      "value": 0.09,
+      "source": "Illustrative demo value"
+    }
+  ],
+  "factor-assignments": [
+    {
+      "id": "assignment-001",
+      "organizationId": 1,
+      "activityDataId": "act-001",
+      "emissionFactorId": "factor-natural-gas"
+    },
+    {
+      "id": "assignment-002",
+      "organizationId": 1,
+      "activityDataId": "act-002",
+      "emissionFactorId": "factor-diesel"
+    },
+    {
+      "id": "assignment-003",
+      "organizationId": 1,
+      "activityDataId": "act-003",
+      "emissionFactorId": "factor-grid"
+    },
+    {
+      "id": "assignment-004",
+      "organizationId": 1,
+      "activityDataId": "act-004",
+      "emissionFactorId": "factor-grid"
+    },
+    {
+      "id": "assignment-005",
+      "organizationId": 1,
+      "activityDataId": "act-005",
+      "emissionFactorId": "factor-air-travel"
+    },
+    {
+      "id": "assignment-006",
+      "organizationId": 1,
+      "activityDataId": "act-006",
+      "emissionFactorId": "factor-freight"
+    }
+  ],
+  "footprint-calculations": [
+    {
+      "id": "calc-seed-001",
+      "organizationId": 1,
+      "activityDataId": "act-001",
+      "emissionFactorId": "factor-natural-gas",
+      "sourceName": "Natural gas boiler",
+      "factorName": "Natural gas combustion",
+      "scope": "SCOPE_1",
+      "period": "2026-01",
+      "quantity": 1250,
+      "unit": "m³",
+      "factorValue": 2,
+      "resultValue": 2500,
+      "calculatedAt": "2026-02-02T09:00:00.000Z"
+    },
+    {
+      "id": "calc-seed-002",
+      "organizationId": 1,
+      "activityDataId": "act-003",
+      "emissionFactorId": "factor-grid",
+      "sourceName": "Purchased electricity",
+      "factorName": "Grid electricity",
+      "scope": "SCOPE_2",
+      "period": "2026-01",
+      "quantity": 48200,
+      "unit": "kWh",
+      "factorValue": 0.25,
+      "resultValue": 12050,
+      "calculatedAt": "2026-02-02T09:00:00.000Z"
     }
   ]
 }
