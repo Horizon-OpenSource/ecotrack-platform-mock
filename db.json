@@ -118,5 +118,130 @@
       "description": "Added new site: Boston R&D Lab",
       "occurredAt": "2026-09-28T19:15:00Z"
     }
+  ],
+
+  "emission-sources": [
+    {
+      "id": "src-001",
+      "organizationId": 1,
+      "facilityId": "2",
+      "facilityName": "Arequipa Plant",
+      "name": "Natural gas boiler",
+      "type": "Stationary combustion",
+      "scope": "SCOPE_1",
+      "createdAt": "2026-01-05T10:00:00.000Z"
+    },
+    {
+      "id": "src-002",
+      "organizationId": 1,
+      "facilityId": "3",
+      "facilityName": "Callao Warehouse",
+      "name": "Delivery fleet",
+      "type": "Mobile combustion",
+      "scope": "SCOPE_1",
+      "createdAt": "2026-01-05T10:00:00.000Z"
+    },
+    {
+      "id": "src-003",
+      "organizationId": 1,
+      "facilityId": "2",
+      "facilityName": "Arequipa Plant",
+      "name": "Purchased electricity",
+      "type": "Electricity consumption",
+      "scope": "SCOPE_2",
+      "createdAt": "2026-01-05T10:00:00.000Z"
+    },
+    {
+      "id": "src-004",
+      "organizationId": 1,
+      "facilityId": "1",
+      "facilityName": "HQ San Isidro",
+      "name": "Corporate office electricity",
+      "type": "Electricity consumption",
+      "scope": "SCOPE_2",
+      "createdAt": "2026-01-05T10:00:00.000Z"
+    },
+    {
+      "id": "src-005",
+      "organizationId": 1,
+      "facilityId": "1",
+      "facilityName": "HQ San Isidro",
+      "name": "Business air travel",
+      "type": "Business travel",
+      "scope": "SCOPE_3",
+      "createdAt": "2026-01-05T10:00:00.000Z"
+    },
+    {
+      "id": "src-006",
+      "organizationId": 1,
+      "facilityId": "3",
+      "facilityName": "Callao Warehouse",
+      "name": "Raw material transport",
+      "type": "Upstream transportation",
+      "scope": "SCOPE_3",
+      "createdAt": "2026-01-05T10:00:00.000Z"
+    }
+  ],
+  "activity-data": [
+    {
+      "id": "act-001",
+      "organizationId": 1,
+      "emissionSourceId": "src-001",
+      "period": "2026-01",
+      "quantity": 1250,
+      "unit": "m³",
+      "origin": "MANUAL",
+      "recordedAt": "2026-03-10T14:30:00.000Z"
+    },
+    {
+      "id": "act-002",
+      "organizationId": 1,
+      "emissionSourceId": "src-002",
+      "period": "2026-02",
+      "quantity": 3860,
+      "unit": "L",
+      "origin": "CSV",
+      "recordedAt": "2026-03-10T14:30:00.000Z"
+    },
+    {
+      "id": "act-003",
+      "organizationId": 1,
+      "emissionSourceId": "src-003",
+      "period": "2026-01",
+      "quantity": 48200,
+      "unit": "kWh",
+      "origin": "MANUAL",
+      "recordedAt": "2026-03-10T14:30:00.000Z"
+    },
+    {
+      "id": "act-004",
+      "organizationId": 1,
+      "emissionSourceId": "src-004",
+      "period": "2026-03",
+      "quantity": 12950,
+      "unit": "kWh",
+      "origin": "API",
+      "recordedAt": "2026-03-10T14:30:00.000Z"
+    },
+    {
+      "id": "act-005",
+      "organizationId": 1,
+      "emissionSourceId": "src-005",
+      "period": "2026-02",
+      "quantity": 18750,
+      "unit": "km",
+      "origin": "MANUAL",
+      "recordedAt": "2026-03-10T14:30:00.000Z"
+    },
+    {
+      "id": "act-006",
+      "organizationId": 1,
+      "emissionSourceId": "src-006",
+      "period": "2026-03",
+      "quantity": 9420,
+      "unit": "ton-km",
+      "origin": "CSV",
+      "recordedAt": "2026-03-10T14:30:00.000Z"
+    }
   ]
 }
